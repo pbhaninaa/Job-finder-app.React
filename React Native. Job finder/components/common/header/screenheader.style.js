@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { COLORS, SIZES } from "../../../constants";
+import { COLORS, SIZES,FONT } from "../../../constants";
 
 const styles = StyleSheet.create({
   btnContainer: {
@@ -20,23 +20,23 @@ const styles = StyleSheet.create({
     height: dimension,
     borderRadius: SIZES.small / 1.25,
   }),
-  Container: {
+  modalContainer: {
     flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
     alignItems: 'center',
-    marginEnd: 5,
-    marginStart: 5,
-    marginBottom: 5,
-    marginTop: 5,
-
   },
-  QRCode: {
-    borderColor: 'gray',
-    borderWidth: 1,
-    marginTop: 5,
-    marginLeft: 5
-
+  modalContent: {
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    alignItems: 'center',
+    padding: 20,
+  },
+  headerText: {
+    fontWeight:FONT.bold,
+    fontSize: 20,
+    color: COLORS.primary,
+    marginBottom: 10,
   }
 });
 
